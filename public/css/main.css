@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -16,4 +19,45 @@ table {
   .fas{
       color:red;
   }
-  
+  .Welcome
+    h1{
+      text-align: center;
+      margin-top: 15%;
+      margin-left: 35%;
+      font-size: 60px;
+      font-family: 'Akaya Telivigala', cursive;
+  }
+  .Welcome
+    p{
+        text-align: center;
+        margin-left: 36%;
+        font-size: x-large;
+        font-family: 'Akaya Telivigala', cursive;
+    }
+    .btn3{
+     float: right;
+     margin-right:22%;
+     margin-top: 150px;
+     border-radius: 12px;
+     padding: 12px;
+     width: 120px;
+     box-shadow: 0px 5px 0 #226fbb;
+     font-family: 'Akaya Telivigala', cursive;
+
+     }
+     .btn2{
+        float: left;
+        margin-left:58%;
+        margin-top: 150px;
+        border-radius: 12px;
+        padding: 12px;
+        width: 120px;
+        box-shadow: 0px 5px 0 #226fbb;
+        font-family: 'Akaya Telivigala', cursive;
+   
+        }
+     .anti{
+      background-image: url('https://media.istockphoto.com/illustrations/user-profile-icon-glassy-modern-blue-button-abstract-background-illustration-id1200200944?k=20&m=1200200944&s=170667a&w=0&h=cUV-DqDkwbKrLdEGimsI9LPkfkcuob28kkRF-sdFYMU=');
+      background-repeat: no-repeat;
+      background-size: cover;
+     }

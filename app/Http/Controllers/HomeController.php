@@ -28,7 +28,7 @@ class HomeController extends Controller
         return view('home',['users'=> $users]);
     }
     public function delete($id){
-       $users = DB ::select('DELETE FROM users where id= ?',[$id]);
+       $users = DB ::select('DELETE from users where id= ?',[$id]);
        return redirect('/home');
     }
 }
