@@ -24,7 +24,6 @@
         <div class="col-md-8">
         <table>
   <tr>
-    <th>#NO:</th>
     <th>FirstName</th>
     <th>LastName</th>
     <th>Email</th>
@@ -33,12 +32,11 @@
   </tr>
   @foreach ($users as $user)
   <tr>
-    <td>{{$user->id}}</td>
     <td>{{$user->firstname}}</td>
     <td>{{$user->lastname}}</td>
     <td>{{$user->email}}</td>
     <td>{{$user->password}}</td>
-    <td><i class="fas fa-trash"></i></td>
+    <td><a href="delete/{{$user->id}}" class="btn btn-danger">delete</a></td>
   </tr>
   @endforeach
 </table>

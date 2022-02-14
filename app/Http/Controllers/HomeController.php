@@ -27,4 +27,8 @@ class HomeController extends Controller
         $users = \DB :: select('SELECT * FROM users');
         return view('home',['users'=> $users]);
     }
+    public function delete($id){
+       $users = DB ::select('DELETE FROM users where id= ?',[$id]);
+       return redirect('/home');
+    }
 }
