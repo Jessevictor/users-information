@@ -24,17 +24,23 @@
         <div class="col-md-8">
         <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>#NO:</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Email</th>
+    <th>password</th>
     <th>Delete</th>
   </tr>
+  @foreach ($users as $user)
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>{{$user->id}}</td>
+    <td>{{$user->firstname}}</td>
+    <td>{{$user->lastname}}</td>
+    <td>{{$user->email}}</td>
+    <td>{{$user->password}}</td>
     <td><i class="fas fa-trash"></i></td>
   </tr>
+  @endforeach
 </table>
         </div>
     </div>

@@ -20,32 +20,17 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-              
+    <body class="antialiased">      
             <div>
                 <h1>Welcome To Users_Info</h1>
                  <p>Have You registerd ?? If Not Try It Now</p>
             @if (Route::has('login'))
                 @auth
-                <button url="{{ url('/home') }}">Home</button>
+                <button onclick="window.location.href = 'http://127.0.0.1:8000/home';">Home</button>
              @else
-                 <button url="{{ route('login') }}">Login</button>
+                 <button onclick="window.location.href = 'http://127.0.0.1:8000/login';">Login</button>
              @if (Route::has('register'))
-                 <button url="{{ route('register') }}">Register</button>
+                 <button onclick="window.location.href = 'http://127.0.0.1:8000/register';">Register</button>
                 @endif
               @endauth
             </div>
